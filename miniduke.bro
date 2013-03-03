@@ -1,6 +1,6 @@
 ##! Detects Miniduke C&C traffic by looking for a GIF in reponse to an HTTP
 ##! request for an index.php with obfuscated parameter.
-@load base/protocols/http
+@load base/frameworks/notice
 
 module Malware;
 
@@ -39,7 +39,9 @@ event http_message_done(c: connection, is_orig: bool, stat: http_message_stat)
     delete c$http$miniduke;
   }
 
-# This one works as well and fires a bit earlier.
+# This one works as well and fires a bit earlier, but using c$http$mime_type
+# is more robust detection scheme since the server could "lie" to use with the
+# Content-Type header.
 #
 #event http_header(c: connection, is_orig: bool, name: string, value: string)
 #  {

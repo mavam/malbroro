@@ -1,8 +1,8 @@
 malBroro
 ========
 
-The **malBroro** (**mal**ware **Bro** **ro**asts) repository contains
-a collection of [Bro](http://www.bro-ids.org) scripts for detecting malware.
+The **mal**ware **Bro** **ro**asts repository contains a collection of
+[Bro](http://www.bro-ids.org) scripts for detecting malware.
 
 Usage
 =====

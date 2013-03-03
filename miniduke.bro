@@ -1,7 +1,5 @@
 ##! Detects Miniduke C&C traffic by looking for a GIF in reponse to an HTTP
 ##! request for an index.php with obfuscated parameter.
-@load base/frameworks/notice
-
 module Malware;
 
 export {

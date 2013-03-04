@@ -1,3 +1,3 @@
 @load base/frameworks/notice
+@load ./mcrat
 @load ./miniduke
-@load ./cve-2013-1493

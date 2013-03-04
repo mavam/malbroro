@@ -6,8 +6,8 @@ module Malware;
 
 export {
   redef enum Notice::Type += {
-    ## CVE-2013-1493 C&C activity.
-    CVE_2013_1493_CC_Activity
+    ## McRAT C&C activity.
+    McRAT_CC_Activity
   };
 }
 
@@ -36,7 +36,7 @@ event http_all_headers(c: connection, is_orig: bool, hlist: mime_header_list)
         }
       }
 
-    NOTICE([$note=CVE_2013_1493_CC_Activity,
+    NOTICE([$note=McRAT_CC_Activity,
            $msg=fmt("McRAT C&C activity: POST %s", c$http$malware),
            $conn=c]);
 

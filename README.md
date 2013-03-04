@@ -42,6 +42,6 @@ Untested
 This list of scripts represents experimental scripts for which I could not
 yet obtain a sample trace.
 
-- [cve-2013-1493.bro](cve-2013-1493.bro): detects McRAT C&C traffic by looking
+- [mcrat.bro](macrat.bro): detects McRAT C&C traffic by looking
   for a HTTP POST request to `/59788582` with the header `Content-Length: 44`,
   `Pragma: no-cache`, and `Host: 110.[0-9]+.55.187`.
